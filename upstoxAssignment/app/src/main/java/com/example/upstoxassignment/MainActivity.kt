@@ -72,10 +72,10 @@ class MainActivity : AppCompatActivity() {
     
     private fun setData() {
         recyclerView?.adapter?.notifyDataSetChanged()
-        currentValue.text = viewModel.currentValue.toString()
-        totalInvestmentValue.text = viewModel.totalInvestment.toString()
-        totalProfitLossValue.text = viewModel.todaysPnl.toString()
-        profitLossValue.text = viewModel.totalPnl.toString()
+        currentValue.text = "₹ ${viewModel.currentValue.toString()}"
+        totalInvestmentValue.text = "₹ ${viewModel.totalInvestment.toString()}"
+        totalProfitLossValue.text = "₹ ${viewModel.todaysPnl.toString()}"
+        profitLossValue.text = "₹ ${viewModel.totalPnl.toString()}"
     }
 
     private fun initViews() {

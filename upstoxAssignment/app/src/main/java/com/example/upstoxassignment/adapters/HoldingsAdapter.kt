@@ -25,8 +25,8 @@ class HoldingsAdapter(private val holdings: List<Holding>): RecyclerView.Adapter
 
         holder.symbol.text = item.symbol.toString()
         holder.quantity.text = item.quantity.toString()
-        holder.ltp.text = item.ltp.toString()
-        holder.pnl.text = item.pnl.toString()
+        holder.ltp.text = "LTP: ₹ ${item.ltp.toString()}"
+        holder.pnl.text = "P/L: ₹ ${item.pnl.toString()}"
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
